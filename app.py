@@ -22,4 +22,5 @@ def hello():
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=81) # for the test
+	app.run(host='0.0.0.0', port=80)
+# port 80 is a must!
